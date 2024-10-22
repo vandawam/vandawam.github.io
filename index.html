@@ -1,23 +1,36 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="asset/profile.png" as="image"> <!-- Menghapus tanda '/' di awal path untuk memastikan path relatif bekerja dengan benar -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="asset/profile.png" as="image">
+    <!-- Menghapus tanda '/' di awal path untuk memastikan path relatif bekerja dengan benar -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        div {
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
             background-color: #151515;
         }
-    
+
         html {
             scroll-behavior: smooth;
-    
+
         }
-    
+
         body,
         div {
             scrollbar-width: none;
@@ -25,43 +38,45 @@
             scrollbar-color: #FA6601 #f1f1f1;
             /* Firefox */
         }
-    
+
         ::-webkit-scrollbar {
             width: 10px;
             /* Lebar scrollbar */
         }
-    
+
         ::-webkit-scrollbar-track {
             background: #373737;
         }
-    
+
         ::-webkit-scrollbar-thumb {
             background: #585757;
             border-radius: 4px;
         }
-    
+
         ::-webkit-scrollbar-thumb:hover {
             background: rgb(119, 119, 119);
         }
     </style>
-    
+
     <div class=" w-full min-h-screen px-20">
         <div class="sticky top-0 z-50">
             <div class=" w-full py-4 flex justify-between text-white  bg-[#151515]">
                 <div class=" text-xl font-bold">
-                    FE • IRVAN
+                    <a href="/">IRVAN</a>
                 </div>
                 <div class=" flex gap-10 font-semibold">
                     <a href="#home">HOME</a>
                     <a href="#about">ABOUT</a>
+                    <a href="#skill">SKILL</a>
                     <a href="#project">PROJECT</a>
                     <a href="#contact">CONTACT</a>
                 </div>
             </div>
             <div class="border-b-2 border-[#4b4b4b]"></div>
         </div>
-    
-        <div id="home" class=" w-full h-[500px] text-white relative flex flex-col justify-center border-b-2 border-[#4b4b4b]">
+
+        <div id="home"
+            class=" w-full h-[600px] text-white relative flex flex-col justify-center border-b-2 border-[#4b4b4b]">
             <div style="user-select: none;" class=" mb-5 ">
                 HELLO, I'M
             </div>
@@ -74,9 +89,9 @@
             <div style="user-select: none; font-size: 80px; line-height: 1" class="font-semibold ml-2">
                 MULTAZAM
             </div>
-    
+
             <div class="flex gap-5 mt-5">
-                <a href="" class="flex gap-2 align-middle">
+                <a href="https://github.com/vandawam" class="flex gap-2 align-middle">
                     <div class=" flex flex-col justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                             class="bi bi-github" viewBox="0 0 16 16">
@@ -93,7 +108,7 @@
                         </svg>
                     </div>
                 </a>
-                <a href="" class="flex gap-2 align-middle">
+                <a href="https://www.linkedin.com/in/irvan-dawam-multazam-a3a3112a1/" class="flex gap-2 align-middle">
                     <div class=" flex flex-col justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                             class="bi bi-github" viewBox="0 0 16 16">
@@ -111,27 +126,78 @@
                     </div>
                 </a>
             </div>
-    
+
             <div class=" absolute right-0 w-fit -z-10">
                 <div style="width: 40px;
                             height: 40px;
                             border-radius: 50%;
                             box-shadow:
                                 0 0 60px 30px #fff,  /* inner white */
-                                0 0 180px 60px #fff; /* outer cyan */"
-                    class="absolute inset-x-1/2 inset-y-1/2 -z-10">
+                                0 0 180px 60px #fff; /* outer cyan */" class="absolute inset-x-1/2 inset-y-1/2 -z-10">
                 </div>
-                <img src="asset/profile.png" alt="Profile Irvan" style="filter: grayscale(100%);" class=" h-[450px]"> <!-- Mengubah 'not found' menjadi 'Profile Irvan' untuk alt yang lebih deskriptif dan menghapus '/' di awal path -->
+                <img src="asset/profile.png" alt="Profile Irvan" style="filter: grayscale(100%);" class=" h-[450px]">
+                <!-- Mengubah 'not found' menjadi 'Profile Irvan' untuk alt yang lebih deskriptif dan menghapus '/' di awal path -->
             </div>
             <div class=""></div>
         </div>
-    
-    
-        <div id="about">
-    
+
+
+        <div id="about" class=" text-white my-5">
+            <div class=" flex justify-between">
+                <div>Profesional Web Developer</div>
+                <div>1+ YEARS EXPERIENCE</div>
+            </div>
+
+            <div class=" my-32 w-full flex justify-center align-middle">
+                <div class=" text-[100px] font-semibold" style="user-select: none;">
+                    I'am a <span class="auto-type text-[#FA6601]">Programmer</span>
+                </div>
+            </div>
+
+            <div class=" flex justify-between align-middle">
+                <div class=" text-[60px] font-bold w-1/3 align-middle">
+                    ABOUT ME
+                </div>
+                <div class=" w-2/3 text-[20px]">
+                    <p>I am a dedicated and professional web developer with over one year of experience, specializing in
+                        creating dynamic and user-friendly websites. My technical expertise includes a strong foundation
+                        in HTML, CSS, JavaScript, and a variety of modern frameworks and libraries such as React and
+                        Angular. I am committed to leveraging these technologies to build responsive and accessible web
+                        applications that meet the needs of users and clients.</p>
+                    <br>
+                    <p>Throughout my career, I have demonstrated a keen ability to adapt to new technologies and
+                        methodologies, which has enabled me to contribute effectively to projects and exceed
+                        expectations. My passion for continuous learning and professional development is matched by my
+                        desire to help others and make a positive impact in the tech community. I am also experienced in
+                        working collaboratively in team settings, where I strive to share knowledge and learn from my
+                        peers.</p>
+                    <br>
+                    <p>As a proactive problem solver, I am always looking for new challenges that push the boundaries of
+                        what I can achieve. My approach to web development is centered around creating intuitive and
+                        efficient user experiences, ensuring that every project I work on is both technically sound and
+                        aesthetically pleasing. I am eager to bring my skills and enthusiasm to new projects where I can
+                        continue to grow as a professional and contribute to the success of my team and clients.</p>
+                </div>
+            </div>
         </div>
-        
+
+        <div id="skill" class=" text-white my-10">
+            <div class=" text-[60px] font-bold">
+                SKILL
+            </div>
+        </div>
+
     </div>
-    
+
 </body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Programmer", "Web Developer", "Frontend Developer", "Backend Developer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+
 </html>
