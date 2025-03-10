@@ -42,3 +42,23 @@ div {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(119, 119, 119);
 }
+:root {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+  }
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    mask: radial-gradient(
+      circle at var(--mouse-x) var(--mouse-y),
+      transparent 1px,
+      rgb(255, 255, 255) 200px
+    );
+    -webkit-mask: radial-gradient(
+      circle at var(--mouse-x) var(--mouse-y),
+      transparent 1px,
+      #282828 200px
+    );
+  }
